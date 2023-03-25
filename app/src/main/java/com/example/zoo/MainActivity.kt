@@ -16,19 +16,17 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        replaceFragment(HomeFragment())
-
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
                 R.id.home -> replaceFragment(HomeFragment())
-                R.id.profile -> replaceFragment(CreditsFragment())
-                R.id.settings -> replaceFragment(CommentFragment())
+                R.id.credits -> replaceFragment(CreditsFragment())
+                R.id.comment -> replaceFragment(CommentFragment())
 
                 else -> {}
             }
-
             true
         }
+        binding.bottomNavigationView.selectedItemId = R.id.home
     }
 
     private fun replaceFragment(fragment : Fragment){
