@@ -1,13 +1,16 @@
-package com.example.zoo
+package com.example.zoo.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.zoo.R
 import com.example.zoo.UI.Comment.CommentFragment
 import com.example.zoo.UI.Credits.CreditsFragment
 import com.example.zoo.UI.Home.HomeFragment
 import com.example.zoo.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
