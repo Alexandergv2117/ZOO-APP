@@ -1,4 +1,5 @@
 <resources>
+
     <string name="app_name">zoo</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -19,4 +20,8 @@
     <string name="ejemplo_textview">Ejemplo de TextView</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et diam velit. Fusce consectetur interdum quam, in fringilla odio tempor vel. Proin gravida, libero non pharetra aliquam,  elit accumsan quam, a dignissim magna dui eget lacus. In hac habitasse platea dictumst. Sed molestie velit quis sapien luctus, quis fermentum quam lobortis. Nullam vel tellus quis purus bibendum iaculis. Duis id lectus nec nibh eleifend venenatis sed quis enim. Etiam ut odio sit amet lorem elementum tempor. Donec a leo augue. Vivamus bibendum pulvinar dui eget ullamcorper. Sed nec purus ac nisl varius bibendum. Sed sed rhoncus ipsum. Nullam auctor enim et ex cursus, sit amet bibendum sem imperdiet.</string>
     <string name="mapa_string">Mapa de Distribución </string>
+    <string name="app_name">Zoo</string>
+    <string name="title_home">Home</string>
+    <string name="title_Credits">Credits</string>
+    <string name="title_Comment">Comment</string>
 </resources>
