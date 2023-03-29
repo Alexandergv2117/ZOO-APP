@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.zoo.R
 import com.example.zoo.UI.Specie.SpecieTypeAdapter
@@ -44,7 +45,7 @@ class HomeFragment : Fragment() {
     private fun configSwipe() {
         binding.swipeHome.setOnRefreshListener {
             binding.swipeHome.setColorSchemeColors(R.color.white, R.color.teal_200)
-            val layoutManager = LinearLayoutManager(requireContext())
+            val layoutManager = GridLayoutManager(requireContext(), 2)
             val itemDecorator =
                 DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
 
