@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zoo.R
@@ -26,7 +27,7 @@ class SpecieTypeViewModel @Inject constructor(
     val isLoanding = MutableLiveData<Boolean>()
 
     fun onCreate(adapter: SpecieTypeAdapter, view: View, context: Context) {
-        val layoutManager = LinearLayoutManager(context)
+        val layoutManager = GridLayoutManager(context, 2)
         val itemDecorator = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
