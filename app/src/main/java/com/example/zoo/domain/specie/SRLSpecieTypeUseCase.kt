@@ -6,7 +6,7 @@ import javax.inject.Inject
 
 class SRLSpecieTypeUseCase @Inject constructor(
     private val repository: ZooRepository
-){
+) {
     suspend operator fun invoke(): List<SpecieType> {
         return try {
             val apiSpecieType = repository.getSpecieFromApi()
@@ -20,13 +20,19 @@ class SRLSpecieTypeUseCase @Inject constructor(
                 emptyList()
             }
         } catch (e: Exception) {
-            listOf(
-                SpecieType(
-                    id = 0,
-                    tipo = "Error : 501",
-                    link_foto = "https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/000-501-http-error.png"
+            val specieTypeDB = repository.getSpecieFromDB()
+
+            if (specieTypeDB.isNotEmpty()) {
+                specieTypeDB
+            } else {
+                listOf(
+                    SpecieType(
+                        id = 0,
+                        tipo = "Error : 501",
+                        link_foto = "https://www.elegantthemes.com/blog/wp-content/uploads/2020/06/000-501-http-error.png"
+                    )
                 )
-            )
+            }
         }
     }
 }
