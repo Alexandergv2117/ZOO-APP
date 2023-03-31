@@ -31,8 +31,20 @@ android {
         debug {
             applicationIdSuffix ".debug"
             debuggable true
+            signingConfig signingConfigs.debug
         }
     }
+
+    signingConfigs {
+        debug {
+            storeFile file("C:\\Users\\robog\\zoo.keystore")
+            storePassword "alexander"
+            keyAlias "zoo"
+            keyPassword "alexander"
+            v1SigningEnabled true
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

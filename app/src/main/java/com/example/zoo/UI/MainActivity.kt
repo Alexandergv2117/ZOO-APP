@@ -1,5 +1,6 @@
 package com.example.zoo.UI
 
+import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -9,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.zoo.R
+import com.example.zoo.UI.Auth.LoginActivity
 import com.example.zoo.databinding.ActivityMainBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -30,7 +32,9 @@ class MainActivity : AppCompatActivity() {
         val navController = navHostFragment.navController
 
         if (!isLoggedIn) {
-            navController.navigate(R.id.authFragment)
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish() // Esto asegura que el usuario no pueda volver a MainActivity al presionar el botón Atrás
         } else {
             val appBarConfiguration = AppBarConfiguration(
                 setOf(
@@ -41,4 +45,5 @@ class MainActivity : AppCompatActivity() {
             navView.setupWithNavController(navController)
         }
     }
+
 }

@@ -9,5 +9,5 @@ object Const {
 
     const val RC_SIGN_IN = 9001
     const val TAG = "MyFragment"
-    const val default_web_client_id = "663801718359-omnf05s6natp8t77kn94k6draier3lej.apps.googleusercontent.com"
+    const val default_web_client_id = "663801718359-dl51r3ouo43fluncq9k9a68cbk5je26d.apps.googleusercontent.com"
 }
