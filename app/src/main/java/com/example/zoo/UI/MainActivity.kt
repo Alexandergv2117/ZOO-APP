@@ -1,10 +1,10 @@
 package com.example.zoo.UI
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -12,13 +12,13 @@ import androidx.navigation.ui.setupWithNavController
 import com.example.zoo.R
 import com.example.zoo.UI.Auth.LoginActivity
 import com.example.zoo.databinding.ActivityMainBinding
+import com.example.zoo.utils.Const.isLoggedIn
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private var isLoggedIn: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
         val navController = navHostFragment.navController
 
+        session()
         if (!isLoggedIn) {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
@@ -46,4 +47,11 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun session() {
+        val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE)
+        val email = prefs.getString("email", null)
+        val name = prefs.getString("name", null)
+
+        isLoggedIn = email != null && name != null
+    }
 }

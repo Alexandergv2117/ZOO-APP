@@ -15,6 +15,7 @@ import com.example.zoo.R
 import com.example.zoo.data.model.SpecieTypeModel
 import com.example.zoo.domain.specie.GetSpecieTypeUseCase
 import com.example.zoo.domain.specie.SRLSpecieTypeUseCase
+import com.example.zoo.utils.Const
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -61,20 +62,24 @@ class SpecieTypeViewModel @Inject constructor(
                     })
                     adapter.notifyDataSetChanged()
                 } else {
+                    if (Const.isLoggedIn) {
+                        Toast.makeText(
+                            context,
+                            "No se encontraron datos",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        isLoanding.postValue(false)
+                    }
+                }
+            } catch (e: Exception) {
+                if (Const.isLoggedIn) {
                     Toast.makeText(
                         context,
-                        "No se encontraron datos",
+                        "Error al cargar los datos: ${e.message}",
                         Toast.LENGTH_SHORT
                     ).show()
                     isLoanding.postValue(false)
                 }
-            } catch (e: Exception) {
-                Toast.makeText(
-                    context,
-                    "Error al cargar los datos: ${e.message}",
-                    Toast.LENGTH_SHORT
-                ).show()
-                isLoanding.postValue(false)
             }
         }
     }
