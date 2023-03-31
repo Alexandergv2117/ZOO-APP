@@ -22,4 +22,11 @@
         android:name="com.example.zoo.UI.comment.CommentFragment"
         android:label="@string/title_Comment"
         tools:layout="@layout/fragment_comment" />
+
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.zoo.UI.Auth.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" >
+    </fragment>
 </navigation>
