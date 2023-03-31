@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
 
         if (!isLoggedIn) {
             navController.navigate(R.id.authFragment)
-            navView.isVisible = false
         } else {
             val appBarConfiguration = AppBarConfiguration(
                 setOf(
