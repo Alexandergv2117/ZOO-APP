@@ -36,6 +36,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
         val navController = navHostFragment.navController
 
+
         omboardingIsReady()
         if (!onboardingIIsView) {
             val omboarding = Intent(this, Onboarding::class.java)

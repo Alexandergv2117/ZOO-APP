@@ -8,6 +8,5 @@ object Const {
     const val BASE_URL_GOOGLE_DRIVE = "https://drive.google.com/uc?export=view&id="
 
     var isLoggedIn: Boolean = false
-
     var onboardingIIsView: Boolean = false
 }
