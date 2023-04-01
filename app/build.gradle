@@ -5,6 +5,7 @@ plugins {
     id 'androidx.navigation.safeargs'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -30,8 +31,20 @@ android {
         debug {
             applicationIdSuffix ".debug"
             debuggable true
+            signingConfig signingConfigs.debug
         }
     }
+
+    signingConfigs {
+        debug {
+            storeFile file("C:\\Users\\robog\\zoo.keystore")
+            storePassword "alexander"
+            keyAlias "zoo"
+            keyPassword "alexander"
+            v1SigningEnabled true
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -69,6 +82,9 @@ dependencies {
     //HILT
     implementation "com.google.dagger:hilt-android:2.45"
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
     kapt "com.google.dagger:hilt-compiler:2.45"
 
     //ROOM
@@ -87,6 +103,8 @@ dependencies {
 
     //Glide
     implementation "com.github.bumptech.glide:glide:4.13.0"
+
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

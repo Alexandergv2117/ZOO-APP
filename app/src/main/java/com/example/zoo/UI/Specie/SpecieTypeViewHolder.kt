@@ -1,6 +1,7 @@
 package com.example.zoo.UI.Specie
 
 import android.view.View
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.zoo.data.model.SpecieTypeModel
 import com.example.zoo.databinding.ItemSpeciesBinding
@@ -17,5 +18,9 @@ class SpecieTypeViewHolder(
         Picasso.get()
             .load("${Const.BASE_URL_GOOGLE_DRIVE}${item.link_foto}")
             .into(binding.specieImage)
+
+        itemView.setOnClickListener {
+            Toast.makeText(itemView.context, "Se hizo clic en ${item.tipo}", Toast.LENGTH_SHORT).show()
+        }
     }
 }
