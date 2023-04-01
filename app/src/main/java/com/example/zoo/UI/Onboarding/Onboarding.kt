@@ -1,5 +1,6 @@
 package com.example.zoo.UI.Onboarding
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,14 +13,17 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.zoo.R
 import com.example.zoo.UI.MainActivity
+import com.example.zoo.utils.Const.onboardingIIsView
 import com.google.android.material.button.MaterialButton
 
-private lateinit var onboardingItemsAdapter: OnboardingItemsAdapter
-private lateinit var indicatorsContainer: LinearLayout
 class Onboarding : AppCompatActivity() {
+    private lateinit var onboardingItemsAdapter: OnboardingItemsAdapter
+    private lateinit var indicatorsContainer: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding)
+        val actionBar = supportActionBar
+        actionBar?.hide()
         setOnboardingItems()
         setupIndicators()
         setCurrentIndicator(0)
@@ -74,7 +78,7 @@ class Onboarding : AppCompatActivity() {
             RecyclerView.OVER_SCROLL_NEVER
         findViewById<ImageView>(R.id.imageNext).setOnClickListener{
             if(onboardingViewPager.currentItem + 1 < onboardingItemsAdapter.itemCount){
-                onboardingViewPager.currentItem+=1
+                onboardingViewPager.currentItem++
             }else{
                 /*navegar al activity principal*/
                 NavigateToHomeActivity()
@@ -86,11 +90,15 @@ class Onboarding : AppCompatActivity() {
         findViewById<MaterialButton>(R.id.bottomNavigationView).setOnClickListener{
             NavigateToHomeActivity()
         }
-
-
     }
     private fun NavigateToHomeActivity(){
-        startActivity(Intent(applicationContext, MainActivity::class.java))
+        val prefs = getSharedPreferences(getString(R.string.prefs_file), Context.MODE_PRIVATE).edit()
+        prefs.putString("omboarding", "true")
+        prefs.apply()
+
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
     /*Indicador de barras de navegacion*/
     private fun setupIndicators(){
