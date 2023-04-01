@@ -6,4 +6,5 @@ object Const {
     const val TIMEOUT: Long = 5000
 
     const val BASE_URL_GOOGLE_DRIVE = "https://drive.google.com/uc?export=view&id="
+    const val IMAGEN_CREDITS = "https://drive.google.com/uc?export=view&id=1A8yhOkEsfL0mGIQcBfgjqXlDySDC7l0f"
 }
