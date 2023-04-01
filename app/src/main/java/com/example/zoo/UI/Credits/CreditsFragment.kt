@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.zoo.databinding.FragmentCreditsBinding
+import com.example.zoo.utils.Const
+import com.squareup.picasso.Picasso
 
 class CreditsFragment : Fragment() {
 
@@ -28,10 +30,9 @@ class CreditsFragment : Fragment() {
         _binding = FragmentCreditsBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        creditsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        Picasso.get()
+            .load("${Const.IMAGEN_CREDITS}")
+            .into(binding.imageView)
         return root
     }
 
