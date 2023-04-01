@@ -11,6 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.zoo.R
 import com.example.zoo.UI.Auth.LoginActivity
+import com.example.zoo.UI.Onboarding.Onboarding
 import com.example.zoo.databinding.ActivityMainBinding
 import com.example.zoo.utils.Const.isLoggedIn
 import dagger.hilt.android.AndroidEntryPoint
@@ -31,6 +32,11 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment
         val navController = navHostFragment.navController
 
+        if (!isLoggedIn) {
+            val omboarding = Intent(this, Onboarding::class.java)
+            startActivity(omboarding)
+            finish()
+        }
         session()
         if (!isLoggedIn) {
             val intent = Intent(this, LoginActivity::class.java)
