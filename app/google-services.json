@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "663801718359",
+    "project_id": "zoo-app-36f5a",
+    "storage_bucket": "zoo-app-36f5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663801718359:android:292e3ace2fccedd022e512",
+        "android_client_info": {
+          "package_name": "com.example.zoo.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663801718359-dl51r3ouo43fluncq9k9a68cbk5je26d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zoo.debug",
+            "certificate_hash": "57939e55b38d400c58b1c9f03bccf098c4bcce15"
+          }
+        },
+        {
+          "client_id": "663801718359-omnf05s6natp8t77kn94k6draier3lej.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCr-VCk8MAlvTV8dudFxx3UsAvAfztv2oA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663801718359-afs4qtj01vtdo3tgojqdvoc5jb350ate.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
