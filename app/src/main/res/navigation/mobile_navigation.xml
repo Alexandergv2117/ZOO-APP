@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_navigation_home_to_listAnimalFragment"
             app:destination="@id/listAnimalFragment" />
+        <argument
+            android:name="tipo"
+            app:argType="string"
+            android:defaultValue="Anfibios" />
     </fragment>
 
     <fragment
@@ -30,6 +34,10 @@
         android:id="@+id/listAnimalFragment"
         android:name="com.example.zoo.UI.ListAnimal.ListAnimalFragment"
         android:label="fragment_list_animal"
-        tools:layout="@layout/fragment_list_animal" />
+        tools:layout="@layout/fragment_list_animal" >
+        <argument
+            android:name="tipo"
+            app:argType="string" />
+    </fragment>
 
 </navigation>
