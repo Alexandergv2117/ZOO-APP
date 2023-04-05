@@ -7,4 +7,37 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="custom_color_primary">#643ae7</color>
+    <color name="custom_color_secondary">#FF8F00</color>
+    <color name="custom_color_secondary_light">#FFD299</color>
+    <color name="custom_color_background">#FFFFFF</color>
+    <color name="custom_color_text_primary">#060906</color>
+    <color name="custom_color_text_secondary">#464747</color>
+    <!-- Colores de naturaleza -->
+    <color name="marron">#8B4513</color>
+    <color name="gris_piedra">#808080</color>
+    <color name="azul_cielo">#87CEEB</color>
+    <color name="amarillo_sol">#FFFF00</color>
+    <color name="verde_oliva">#556B2F</color>
+    <color name="naranja_atardecer">#FFA07A</color>
+    <color name="purpura_montana">#9370DB</color>
+    <color name="gris_tormenta">#696969</color>
+    <color name="verde_oscuro">#006400</color>
+    <color name="verde_claro">#8FBC8F</color>
+    <color name="verde_lima">#00FF00</color>
+    <color name="verde_oliva_oscuro">#556B2F</color>
+    <color name="verde_manzana">#98FB98</color>
+    <color name="verde_menta">#00FA9A</color>
+    <color name="marron_claro">#CD853F</color>
+    <color name="marron_oscuro">#654321</color>
+    <color name="gris_claro">#D3D3D3</color>
+    <color name="gris_oscuro">#A9A9A9</color>
+    <color name="azul_turquesa">#40E0D0</color>
+    <color name="azul_claro">#ADD8E6</color>
+    <color name="amarillo_limon">#FFFFE0</color>
+    <color name="amarillo_mostaza">#FFDB58</color>
+    <color name="lila">#C8A2C8</color>
+    <color name="rosa_oscuro">#FF1493</color>
+    <color name="gris_plateado">#C0C0C0</color>
+    <color name="gris_carbon">#383838</color>
 </resources>
