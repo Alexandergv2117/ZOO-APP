@@ -10,6 +10,6 @@ interface ZooApiClient {
     @GET("especie")
     suspend fun getAllSpecie(): Response<List<SpecieTypeModel>>
 
-    @GET("especie/tipo?tipo=anfibios")
-    suspend fun getAnimalBySpecie(): Response<List<AnimalTypeModel>>
+    @GET("especie/tipo")
+    suspend fun getAnimalBySpecie(@Query("tipo") tipo: String): Response<List<AnimalTypeModel>>
 }

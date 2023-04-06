@@ -1,5 +1,6 @@
 package com.example.zoo.domain.animal
 
+import android.widget.Toast
 import com.example.zoo.data.DB.Animal.toDB
 import com.example.zoo.data.ZooRepository
 import javax.inject.Inject
@@ -7,9 +8,9 @@ import javax.inject.Inject
 class SRLAnimalTypeUseCase @Inject constructor(
     private val repository: ZooRepository
 ){
-    suspend operator fun invoke(): List<AnimalType> {
+    suspend operator fun invoke(tipo: String): List<AnimalType> {
         return try {
-            val apiAnimalType = repository.getAnimalFromApi()
+            val apiAnimalType = repository.getAnimalFromApi(tipo)
             if (apiAnimalType.isNotEmpty()) {
                 repository.clearTableSpecie()
                 repository.insertAnimals(apiAnimalType.map {

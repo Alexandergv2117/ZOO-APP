@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -54,7 +55,8 @@ class ListAnimalFragment : Fragment() {
                 layoutManager,
                 itemDecorator,
                 binding.recyclerView,
-                AnimalTypeAdapter()
+                AnimalTypeAdapter(),
+                args.tipo
             )
 
             Handler(Looper.getMainLooper()).postDelayed(
@@ -65,10 +67,12 @@ class ListAnimalFragment : Fragment() {
     }
 
     private fun setList(view: View) {
+        Toast.makeText(requireContext(), args.tipo, Toast.LENGTH_SHORT).show()
         animalViewModel.onCreate(
             AnimalTypeAdapter(),
             view,
-            requireContext()
+            requireContext(),
+            args.tipo
         )
     }
 

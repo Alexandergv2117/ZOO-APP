@@ -7,14 +7,13 @@ import javax.inject.Inject
 class GetAnimalTypeUseCase @Inject constructor(
     private val repository: ZooRepository
 ){
-    suspend operator fun invoke(): List<AnimalType> {
+    suspend operator fun invoke(tipo: String): List<AnimalType> {
         val animalType = repository.getAnimalFromDB()
         return if (animalType.isNotEmpty()) {
             animalType
         } else {
-            val apiAnimalType = repository.getAnimalFromApi()
+            val apiAnimalType = repository.getAnimalFromApi(tipo)
             if (apiAnimalType.isNotEmpty()) {
-                repository.clearTableSpecie()
                 repository.insertAnimals(apiAnimalType.map {
                     it.toDB()
                 })

@@ -27,12 +27,12 @@ class AnimalTypeViewModel @Inject constructor(
 ): ViewModel() {
     val isLoanding = MutableLiveData<Boolean>()
 
-    fun onCreate(adapter: AnimalTypeAdapter, view: View, context: Context) {
+    fun onCreate(adapter: AnimalTypeAdapter, view: View, context: Context, tipo: String) {
         val layoutManager = GridLayoutManager(context, 2)
         val itemDecorator = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        setRecyclerView(layoutManager, itemDecorator, recyclerView, adapter, context)
+        setRecyclerView(layoutManager, itemDecorator, recyclerView, adapter, context, tipo)
     }
 
      @SuppressLint("NotifyDataSetChanged")
@@ -41,7 +41,8 @@ class AnimalTypeViewModel @Inject constructor(
          itemDecorator: DividerItemDecoration,
          recyclerView: RecyclerView,
          adapter: AnimalTypeAdapter,
-         context: Context
+         context: Context,
+         tipo: String
      ) {
          recyclerView.layoutManager = layoutManager
          recyclerView.adapter = adapter
@@ -50,7 +51,7 @@ class AnimalTypeViewModel @Inject constructor(
          viewModelScope.launch {
              isLoanding.postValue(true)
              try {
-                 val result = getAnimalTypeUseCase()
+                 val result = getAnimalTypeUseCase(tipo)
 
                  if (result.isNotEmpty()) {
                      adapter.setList(result.map {
@@ -102,13 +103,14 @@ class AnimalTypeViewModel @Inject constructor(
         itemDecorator: DividerItemDecoration,
         recyclerView: RecyclerView,
         adapter: AnimalTypeAdapter,
+        tipo: String
     ) {
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
         recyclerView.addItemDecoration(itemDecorator)
 
         viewModelScope.launch {
-            val result = srlAnimalTypeUseCase()
+            val result = srlAnimalTypeUseCase(tipo)
 
             if (result.isNotEmpty()) {
                 adapter.setList(result.map {
