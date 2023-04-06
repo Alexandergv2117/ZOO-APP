@@ -11,7 +11,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.zoo.R
 import com.example.zoo.UI.Specie.SpecieTypeAdapter
 import com.example.zoo.UI.Specie.SpecieTypeViewModel

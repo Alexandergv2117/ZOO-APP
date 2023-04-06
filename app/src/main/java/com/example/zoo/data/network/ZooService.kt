@@ -19,9 +19,9 @@ class ZooService @Inject constructor(
         }
     }
 
-    suspend fun getAnimalBySpecie(tipo: String): List<AnimalTypeModel> {
+    suspend fun getAnimalBySpecie(): List<AnimalTypeModel> {
         return withContext(Dispatchers.IO) {
-            val response = api.getAnimalBySpecie(tipo)
+            val response = api.getAnimalBySpecie()
             response.body() ?: emptyList()
         }
     }
