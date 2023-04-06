@@ -18,6 +18,7 @@ import com.example.zoo.UI.Animal.AnimalTypeAdapter
 import com.example.zoo.UI.Animal.AnimalTypeViewModel
 import com.example.zoo.databinding.FragmentListAnimalBinding
 import com.example.zoo.utils.Const
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -38,6 +39,8 @@ class ListAnimalFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.nav_view)
+        bottomNavigationView?.visibility = View.GONE
         binding.text.text = args.tipo
         setList(view)
         configSwipe()

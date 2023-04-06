@@ -16,6 +16,7 @@ import com.example.zoo.UI.Specie.SpecieTypeAdapter
 import com.example.zoo.UI.Specie.SpecieTypeViewModel
 import com.example.zoo.databinding.FragmentHomeBinding
 import com.example.zoo.utils.Const
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -36,6 +37,8 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.nav_view)
+        bottomNavigationView?.visibility = View.VISIBLE
         setList(view)
         configSwipe()
     }
