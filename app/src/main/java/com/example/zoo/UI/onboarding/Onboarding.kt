@@ -1,4 +1,4 @@
-package com.example.zoo.UI.onboarding
+package com.example.zoo.UI.Onboarding
 import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.zoo.UI.MainActivity
 import com.example.zoo.R
+import com.example.zoo.UI.onboarding.OnboardigItemsAdapter
+import com.example.zoo.UI.onboarding.OnboardingItem
 import com.google.android.material.button.MaterialButton
 
 class Onboarding : AppCompatActivity() {
