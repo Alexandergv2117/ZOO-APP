@@ -14,7 +14,6 @@ import com.example.zoo.R
 import com.google.android.material.button.MaterialButton
 
 class Onboarding : AppCompatActivity() {
-    // TODO: Rename and change types of parameters
  private lateinit var onboardingItemsAdapter: OnboardigItemsAdapter
  private lateinit var indicatorsContainer: LinearLayout
 
