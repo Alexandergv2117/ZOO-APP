@@ -8,8 +8,8 @@ import androidx.room.Query
 
 @Dao
 interface AnimalTypeDao {
-    @Query("SELECT * FROM animal")
-    suspend fun getAnimalBySpecie(): List<AnimalTypeEntity>
+    @Query("SELECT * FROM animal WHERE especie = :specie")
+    suspend fun getAnimalBySpecie(specie: String): List<AnimalTypeEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAllAnimal(animals: List<AnimalTypeEntity>)

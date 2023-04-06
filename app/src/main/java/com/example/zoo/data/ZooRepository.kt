@@ -49,8 +49,8 @@ class ZooRepository @Inject constructor(
         }
     }
 
-    suspend fun getAnimalFromDB(): List<AnimalType> {
-        val response = animalTypeDao.getAnimalBySpecie()
+    suspend fun getAnimalFromDB(specie: String): List<AnimalType> {
+        val response = animalTypeDao.getAnimalBySpecie(specie)
         return response.map {
             it.toDomain()
         }

@@ -21,7 +21,7 @@ class SRLAnimalTypeUseCase @Inject constructor(
                 emptyList()
             }
         } catch (e: Exception) {
-            val animalTypeDB = repository.getAnimalFromDB()
+            val animalTypeDB = repository.getAnimalFromDB(tipo)
 
             if (animalTypeDB.isNotEmpty()) {
                 animalTypeDB

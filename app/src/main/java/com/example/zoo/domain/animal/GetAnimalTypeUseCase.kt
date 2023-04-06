@@ -15,7 +15,7 @@ class GetAnimalTypeUseCase @Inject constructor(
             })
             apiAnimalType
         } else {
-            val animalType = repository.getAnimalFromDB()
+            val animalType = repository.getAnimalFromDB(tipo)
             if (animalType.isNotEmpty()) {
                 animalType
             } else {
