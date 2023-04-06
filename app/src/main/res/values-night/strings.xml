@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fondo_description">Imagen de Fondo</string>
+    <string name="mapa_description" />
+    <string name="alimentacion_icon" />
+    <string name="reproduccion_icon" />
+    <string name="tamaño_icon" />
+    <string name="riesgo_icon" />
+    <string name="habitad_icon" />
+    <string name="endemica_icon" />
+</resources>

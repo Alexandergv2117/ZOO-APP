@@ -1,4 +1,23 @@
 <resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_bottom_nav_home">Home</string>
+    <string name="name_bottom_nav_credit">Credits</string>
+    <string name="name_bottom_nav_comment">Comment</string>
+    <string name="back">Back</string>
+    <string name="next">Next</string>
+    <string name="tooltip_audio">Audio</string>
+    <string name="fondo_description">Imagen de Fondo</string>
+    <string name="mapa_description" />
+    <string name="alimentacion_icon" />
+    <string name="reproduccion_icon" />
+    <string name="tamaño_icon" />
+    <string name="riesgo_icon" />
+    <string name="habitad_icon" />
+    <string name="endemica_icon" />
+    <string name="ejemplo_textview">Ejemplo de TextView</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et diam velit. Fusce consectetur interdum quam, in fringilla odio tempor vel. Proin gravida, libero non pharetra aliquam,  elit accumsan quam, a dignissim magna dui eget lacus. In hac habitasse platea dictumst. Sed molestie velit quis sapien luctus, quis fermentum quam lobortis. Nullam vel tellus quis purus bibendum iaculis. Duis id lectus nec nibh eleifend venenatis sed quis enim. Etiam ut odio sit amet lorem elementum tempor. Donec a leo augue. Vivamus bibendum pulvinar dui eget ullamcorper. Sed nec purus ac nisl varius bibendum. Sed sed rhoncus ipsum. Nullam auctor enim et ex cursus, sit amet bibendum sem imperdiet.</string>
+    <string name="mapa_string">Mapa de Distribución </string>
     <string name="app_name">Zoo</string>
     <string name="title_home">Home</string>
     <string name="title_Credits">Credits</string>
