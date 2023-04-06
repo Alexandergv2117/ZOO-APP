@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
-import com.example.zoo.MainActivity
+import com.example.zoo.UI.MainActivity
 import com.example.zoo.R
 import com.google.android.material.button.MaterialButton
 

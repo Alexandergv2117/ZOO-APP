@@ -35,7 +35,6 @@
     <string name="default_web_client" translatable="false">663801718359-omnf05s6natp8t77kn94k6draier3lej.apps.googleusercontent.com</string>
     <string name="prefs_file">com.example.zoo.PREFERENCE_FILE_KEY</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="guia_rapida">Guia Rapida</string>
     <string name="skip">Skip</string>
 </resources>

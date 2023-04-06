@@ -43,17 +43,6 @@
                         app:layout_anchor="@id/app_bar"
                         app:layout_anchorGravity="start" />
 
-                    <ImageButton
-                        android:id="@+id/next_button"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:contentDescription="@string/next"
-                        android:minHeight="48dp"
-                        android:paddingStart="16dp"
-                        android:paddingEnd="16dp"
-                        android:src="@drawable/forward"
-                        app:layout_anchor="@id/app_bar"
-                        app:layout_anchorGravity="end" />
 
                 </com.google.android.material.appbar.MaterialToolbar>
 
@@ -81,7 +70,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_end="655dp" />
+            app:layout_constraintGuide_end="963dp" />
 
         <ImageView
             android:id="@+id/img_bg"
@@ -92,6 +81,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/guideline"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             tools:ignore="ImageContrastCheck,ImageContrastCheck"
             android:contentDescription="@string/fondo_description"/>
 
@@ -102,12 +92,13 @@
             app:layout_constraintBottom_toBottomOf="@+id/img_bg"
             app:layout_constraintEnd_toEndOf="@+id/img_bg"
             app:layout_constraintStart_toStartOf="@+id/img_bg"
-            app:layout_constraintTop_toTopOf="@+id/img_bg" />
+            app:layout_constraintTop_toTopOf="@+id/img_bg"
+            android:background="@color/rojogif"/>
 
         <LinearLayout
             android:id="@+id/linearLayout"
-            android:layout_width="393dp"
-            android:layout_height="278dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -245,7 +236,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/mapa_description"
-                    android:src="@drawable/ic_banner_foreground" />
+                    android:src="@drawable/ic_banner_foreground"
+                    android:layout_gravity="center"/>
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
