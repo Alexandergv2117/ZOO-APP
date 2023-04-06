@@ -8,16 +8,16 @@ class GetAnimalTypeUseCase @Inject constructor(
     private val repository: ZooRepository
 ){
     suspend operator fun invoke(tipo: String): List<AnimalType> {
-        val animalType = repository.getAnimalFromDB()
-        return if (animalType.isNotEmpty()) {
-            animalType
+        val apiAnimalType = repository.getAnimalFromApi(tipo)
+        return if (apiAnimalType.isNotEmpty()) {
+            repository.insertAnimals(apiAnimalType.map {
+                it.toDB()
+            })
+            apiAnimalType
         } else {
-            val apiAnimalType = repository.getAnimalFromApi(tipo)
-            if (apiAnimalType.isNotEmpty()) {
-                repository.insertAnimals(apiAnimalType.map {
-                    it.toDB()
-                })
-                apiAnimalType
+            val animalType = repository.getAnimalFromDB()
+            if (animalType.isNotEmpty()) {
+                animalType
             } else {
                 emptyList()
             }

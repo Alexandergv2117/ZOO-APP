@@ -14,7 +14,7 @@ class AnimalTypeViewHolder(
     private val binding = ItemAnimalBinding.bind(itemView)
 
     fun bind(item: AnimalTypeModel) {
-        binding.animalName.text = item.scientific_name
+        binding.animalName.text = item.nombre
         Picasso.get()
             .load("${Const.BASE_URL_GOOGLE_DRIVE}${item.imagen}")
             .into(binding.animalImage)
