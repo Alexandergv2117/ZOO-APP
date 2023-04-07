@@ -19,4 +19,20 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="guia_rapida">Guia Rapida</string>
     <string name="skip">Skip</string>
+
+    <!--- Detail -->
+    <string name="back">Back</string>
+    <string name="tooltip_audio">Audio</string>
+    <string name="fondo_description">Imagen de Fondo</string>
+    <string name="origen">Endemica</string>
+    <string name="habitad">Lugares humedos</string>
+    <string name="riesgo">Bajo</string>
+    <string name="alimentacion">Alimentacion</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="reproducci_n">Reproducción</string>
+    <string name="tama_o">Tamaño</string>
+    <string name="riesgo_detai">Riesgo</string>
+    <string name="habitat">Habitat</string>
+    <string name="origen_detail">Origen</string>
+    <string name="nombre_cientifico">Nombre cientifico</string>
 </resources>

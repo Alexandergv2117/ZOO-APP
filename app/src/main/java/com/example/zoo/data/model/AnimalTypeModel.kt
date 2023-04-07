@@ -1,7 +1,10 @@
 package com.example.zoo.data.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class AnimalTypeModel (
     @SerializedName("id") val id: Int,
     @SerializedName("imagen") val imagen: String,
@@ -19,4 +22,4 @@ data class AnimalTypeModel (
     @SerializedName("audio") val audio: String,
     @SerializedName("gif") val gif: String,
     @SerializedName("especie") val especie: String
-)
+) : Parcelable

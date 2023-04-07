@@ -38,6 +38,18 @@
         <argument
             android:name="tipo"
             app:argType="string" />
+        <action
+            android:id="@+id/action_listAnimalFragment_to_detailAnimalFragment"
+            app:destination="@id/detailAnimalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailAnimalFragment"
+        android:name="com.example.zoo.UI.DetailAnimal.DetailAnimalFragment"
+        android:label="fragment_detail_animal"
+        tools:layout="@layout/fragment_detail_animal" >
+        <argument
+            android:name="AnimalType"
+            app:argType="com.example.zoo.data.model.AnimalTypeModel" />
     </fragment>
 
 </navigation>
