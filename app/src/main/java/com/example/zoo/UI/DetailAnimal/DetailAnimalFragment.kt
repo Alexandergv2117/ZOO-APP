@@ -29,7 +29,7 @@ class DetailAnimalFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Picasso.get()
-            .load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.imagen}")
+            .load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.gif}")
             .into(binding.gifAnimal)
 
         binding.nombreCientifico.text = args.animalType.scientific_name
@@ -43,7 +43,7 @@ class DetailAnimalFragment : Fragment() {
         binding.descripcion.text = args.animalType.descripcion
 
         Picasso.get()
-            .load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.imagen}")
+            .load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.mapa}")
             .into(binding.mapa)
     }
 
