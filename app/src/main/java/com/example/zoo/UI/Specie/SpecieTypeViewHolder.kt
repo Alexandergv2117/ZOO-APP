@@ -2,7 +2,9 @@ package com.example.zoo.UI.Specie
 
 import android.view.View
 import android.widget.Toast
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.zoo.UI.home.HomeFragmentDirections
 import com.example.zoo.data.model.SpecieTypeModel
 import com.example.zoo.databinding.ItemSpeciesBinding
 import com.example.zoo.utils.Const
@@ -20,7 +22,8 @@ class SpecieTypeViewHolder(
             .into(binding.specieImage)
 
         itemView.setOnClickListener {
-            Toast.makeText(itemView.context, "Se hizo clic en ${item.tipo}", Toast.LENGTH_SHORT).show()
+            val action = HomeFragmentDirections.actionNavigationHomeToListAnimalFragment(item.tipo)
+            itemView.findNavController().navigate(action)
         }
     }
 }
