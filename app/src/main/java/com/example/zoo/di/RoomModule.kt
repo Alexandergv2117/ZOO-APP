@@ -22,8 +22,4 @@ object RoomModule {
     @Singleton
     @Provides
     fun provideSpecietypeDao(db: ZooDB) = db.getSpecieTypeDao()
-
-    @Singleton
-    @Provides
-    fun provideAnimaltypeDao(db: ZooDB) = db.getAnimalTypeDao()
 }

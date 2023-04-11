@@ -5,7 +5,6 @@ plugins {
     id 'androidx.navigation.safeargs'
     id 'kotlin-kapt'
     id 'com.google.dagger.hilt.android'
-    id 'com.google.gms.google-services'
 }
 
 android {
@@ -14,7 +13,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.zoo"
-        minSdk 30
+        minSdk 29
         targetSdk 33
         versionCode 1
         versionName "1.0"
@@ -31,20 +30,8 @@ android {
         debug {
             applicationIdSuffix ".debug"
             debuggable true
-            signingConfig signingConfigs.debug
         }
     }
-
-    signingConfigs {
-        debug {
-            storeFile file("./zoo.keystore")
-            storePassword "alexander"
-            keyAlias "zoo"
-            keyPassword "alexander"
-            v1SigningEnabled true
-        }
-    }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -59,7 +46,7 @@ android {
 
 dependencies {
 
-    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.8.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
@@ -82,11 +69,6 @@ dependencies {
     //HILT
     implementation "com.google.dagger:hilt-android:2.45"
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.annotation:annotation:1.6.0'
-
-    // FIREBASE
-    implementation 'com.google.firebase:firebase-auth:21.2.0'
     kapt "com.google.dagger:hilt-compiler:2.45"
 
     //ROOM
@@ -98,17 +80,13 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.google.code.gson:gson:2.10.1'
-    implementation 'com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.11'
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
 
     //Corrutinas
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1'
 
     //Glide
-    implementation 'com.github.bumptech.glide:glide:4.15.1'
-
-    implementation 'com.google.android.gms:play-services-auth:20.4.1'
-
-    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    implementation "com.github.bumptech.glide:glide:4.13.0"
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

@@ -13,6 +13,7 @@
                 android:id="@+id/Titulo_agradecimiento"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
                 android:text="@string/Titulo_agradecimiento"
                 android:textAlignment="center"
                 android:textSize="16sp"
@@ -38,34 +39,42 @@
                 app:layout_constraintGuide_percent="0.51" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:text="@string/InfoProfe"
+                android:textAlignment="center"
+                android:textStyle="italic"
                 app:layout_constraintBottom_toTopOf="@+id/Creditos"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/guideline"
-                android:text="@string/InfoProfe"/>
+                app:layout_constraintTop_toTopOf="@+id/guideline" />
 
             <TextView
                 android:id="@+id/Textoagradecimiento"
-                android:layout_width="180dp"
-                android:layout_height="68dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="4dp"
+                android:layout_width="152dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
                 android:text="@string/Texto_agradecimiento"
                 android:textAlignment="center"
                 android:textAllCaps="false"
-                android:textColor="#0C0C0C"
+                android:textColor="#FFFFFF"
                 app:layout_constraintBottom_toTopOf="@+id/guideline"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.294"
                 app:layout_constraintStart_toStartOf="@+id/guidelin"
                 app:layout_constraintTop_toBottomOf="@+id/Titulo_agradecimiento"
-                app:layout_constraintVertical_bias="0.47" />
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/Creditos"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="152dp"
+                android:layout_marginStart="200dp"
                 android:layout_marginEnd="151dp"
                 android:layout_marginBottom="12dp"
                 android:text="@string/Creditos"
@@ -73,87 +82,104 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/REPTILES"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.416"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="86dp"
                 android:text="@string/Lista_Imagenes"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes1"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="166dp"
                 android:text="@string/Lista_Imagenes1"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes2"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="104dp"
                 android:text="@string/Lista_Imagenes2"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes3"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="120dp"
                 android:text="@string/Lista_Imagenes3"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes4"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="147dp"
                 android:text="@string/Lista_Imagenes4"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes5"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="180dp"
                 android:text="@string/Lista_Imagenes5"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes6"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="181dp"
                 android:text="@string/Lista_Imagenes6"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes7"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
                 android:layout_marginEnd="179dp"
                 android:text="@string/Lista_Imagenes7"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Lista_Imagenes6"
                 tools:ignore="MissingConstraints" />
 
@@ -175,6 +201,7 @@
                 android:id="@+id/ANFIBIOS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
                 android:layout_marginBottom="27dp"
                 android:text="@string/ANFIBIOS"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes8"
@@ -196,74 +223,90 @@
                 android:id="@+id/Lista_Imagenes9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="135dp"
                 android:text="@string/Lista_Imagenes9"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes10"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="173dp"
                 android:text="@string/Lista_Imagenes8"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes9"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="179dp"
                 android:text="@string/Lista_Imagenes10"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes11"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="138dp"
                 android:text="@string/Lista_Imagenes11"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes12"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="148dp"
                 android:text="@string/Lista_Imagenes12"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes13"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="139dp"
                 android:text="@string/Lista_Imagenes13"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes14"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="170dp"
                 android:text="@string/Lista_Imagenes14"
                 app:layout_constraintBottom_toTopOf="@+id/Lista_Imagenes15"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/Lista_Imagenes15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
                 android:layout_marginEnd="177dp"
                 android:layout_marginBottom="78dp"
                 android:text="@string/Lista_Imagenes15"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

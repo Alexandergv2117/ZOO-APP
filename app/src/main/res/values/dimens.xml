@@ -2,10 +2,4 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-
-    <!-- Compare this snippet from app\src\main\res\layout\fragment_detail_animal.xml: -->
-    <dimen name="layout_width_icon">36dp</dimen>
-    <dimen name="layout_height_icon">27dp</dimen>
-    <dimen name="layout_width_image">290dp</dimen>
-    <dimen name="layout_height_image">30dp</dimen>
 </resources>

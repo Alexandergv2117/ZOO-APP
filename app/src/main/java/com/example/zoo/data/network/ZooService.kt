@@ -1,7 +1,6 @@
 package com.example.zoo.data.network
 
 import com.example.zoo.core.RetrofitHelper
-import com.example.zoo.data.model.AnimalTypeModel
 import com.example.zoo.data.model.SpecieTypeModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -15,13 +14,6 @@ class ZooService @Inject constructor(
     suspend fun getAllSpecies(): List<SpecieTypeModel> {
         return withContext(Dispatchers.IO) {
             val response = api.getAllSpecie()
-            response.body() ?: emptyList()
-        }
-    }
-
-    suspend fun getAnimalBySpecie(tipo: String): List<AnimalTypeModel> {
-        return withContext(Dispatchers.IO) {
-            val response = api.getAnimalBySpecie(tipo)
             response.body() ?: emptyList()
         }
     }

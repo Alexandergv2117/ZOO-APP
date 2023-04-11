@@ -9,15 +9,7 @@
         android:id="@+id/navigation_home"
         android:name="com.example.zoo.UI.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_navigation_home_to_listAnimalFragment"
-            app:destination="@id/listAnimalFragment" />
-        <argument
-            android:name="tipo"
-            app:argType="string"
-            android:defaultValue="Anfibios" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_credits"
@@ -30,26 +22,4 @@
         android:name="com.example.zoo.UI.comment.CommentFragment"
         android:label="@string/title_Comment"
         tools:layout="@layout/fragment_comment" />
-    <fragment
-        android:id="@+id/listAnimalFragment"
-        android:name="com.example.zoo.UI.ListAnimal.ListAnimalFragment"
-        android:label="fragment_list_animal"
-        tools:layout="@layout/fragment_list_animal" >
-        <argument
-            android:name="tipo"
-            app:argType="string" />
-        <action
-            android:id="@+id/action_listAnimalFragment_to_detailAnimalFragment"
-            app:destination="@id/detailAnimalFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/detailAnimalFragment"
-        android:name="com.example.zoo.UI.DetailAnimal.DetailAnimalFragment"
-        android:label="fragment_detail_animal"
-        tools:layout="@layout/fragment_detail_animal" >
-        <argument
-            android:name="AnimalType"
-            app:argType="com.example.zoo.data.model.AnimalTypeModel" />
-    </fragment>
-
 </navigation>
