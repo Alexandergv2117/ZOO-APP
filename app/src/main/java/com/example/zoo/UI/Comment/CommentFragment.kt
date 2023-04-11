@@ -38,7 +38,7 @@ class CommentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val commentViewModel =
-            ViewModelProvider(this).get(CommentViewModel::class.java)
+            ViewModelProvider(this)[CommentViewModel::class.java]
 
         _binding = FragmentCommentBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -106,14 +106,8 @@ class CommentFragment : Fragment() {
                 })
             }
         }
-
-
-
-
-
         return root
     }
-
 
     override fun onDestroyView() {
         super.onDestroyView()

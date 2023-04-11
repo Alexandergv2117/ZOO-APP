@@ -13,4 +13,11 @@
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Estilo para cambiar el default ratingBar Start a RatingBarHojas -->
+    <style name="CustomRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_bar</item>
+        <item name="android:minHeight">15dip</item>
+        <item name="android:maxHeight">80dip</item>
+    </style>
 </resources>
