@@ -3,27 +3,36 @@
     <string name="title_home">Home</string>
     <string name="title_Credits">Credits</string>
     <string name="title_Comment">Comment</string>
-    <string name="Titulo_agradecimiento">AGRADECIMIENTOS!</string>
-    <string name="Texto_agradecimiento">"Queremos agradecer al profesor Christian Said Berriozabal Islas por su contribucion para el equipo."</string>
-    <string name="InfoProfe">Maestría y doctorado en el programa en Ciencias de Biodiversidad y Conservación de la Universidad Autónoma del Estado de Hidalgo. Sus líneas de investigación son la biodiversidad, el cambio climático global, la ecología térmica, la evolución y los patrones de distribución utilizando como modelo de estudio a los vertebrados en sistemas tropicales. Fue profesor de la Universidad Autónoma del Estado de Hidalgo y la Universidad Autónoma de Quintana Roo. Actualmente, es profesor de la Universidad Politécnica de Quintana Roo. Christian ha estado involucrado en proyectos relacionados con la educación ambiental y la conservación de la vida silvestre, fue coautor del libro Los Anfibios y Reptiles del Estado de Hidalgo, México: Diversidad, Biogeografía y Conservación, y diversos capítulos de libros. Es autor y coautor de 50 artículos científicos, así como de diversos artículos de divulgación. Actualmente, pertenece al sistema Nacional de Investigadores Nivel 1 y participa en colaboración con diversas universidades nacionales e internacionales</string>
-    <string name="Creditos">"CREDITOS"</string>
-    <string name="REPTILES">"REPTILES"</string>
-    <string name="Lista_Imagenes">"Staurotypus triporcatus Foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes1">"Basiliscus foto de Christian B.I.JPG"</string>
-    <string name="Lista_Imagenes2">"Laemanctus serratus foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes3">"Ctenosaura similis foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes4">"Boa Imperator foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes5">"Spilotes pullatus Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes6">"Nauyaca foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes7">"Crotaluz tzabcan Christian B.I.jpg"</string>
+    <string name="btn_google_logIn">Google</string>
+    <string name="title_activity_login">Welcome to zoo</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="default_web_client" translatable="false">663801718359-omnf05s6natp8t77kn94k6draier3lej.apps.googleusercontent.com</string>
+    <string name="prefs_file">com.example.zoo.PREFERENCE_FILE_KEY</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="guia_rapida">Guia Rapida</string>
+    <string name="skip">Skip</string>
 
-    <string name="ANFIBIOS">"ANFIBIOS"</string>
-    <string name="Lista_Imagenes8">"Eleutherodactylus Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes9">"Incilius valliceps foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes10">"Smilisca baudinii Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes11">"Trachycephalus foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes12">"Leptodactylus foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes13">"Hypopachus variolosus Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes14">"Lithobates foto de Christian B.I.jpg"</string>
-    <string name="Lista_Imagenes15">"Rhinella horribilis Christian B.I.jpg"</string>
+    <!--- Detail -->
+    <string name="back">Back</string>
+    <string name="tooltip_audio">Audio</string>
+    <string name="fondo_description">Imagen de Fondo</string>
+    <string name="origen">Endemica</string>
+    <string name="habitad">Lugares humedos</string>
+    <string name="riesgo">Bajo</string>
+    <string name="alimentacion">Alimentacion</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="reproducci_n">Reproducción</string>
+    <string name="tama_o">Tamaño</string>
+    <string name="riesgo_detai">Riesgo</string>
+    <string name="habitat">Habitat</string>
+    <string name="origen_detail">Origen</string>
+    <string name="nombre_cientifico">Nombre cientifico</string>
 </resources>
