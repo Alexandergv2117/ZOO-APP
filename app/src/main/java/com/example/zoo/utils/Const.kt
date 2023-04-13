@@ -9,4 +9,6 @@ object Const {
 
     var isLoggedIn: Boolean = false
     var onboardingIIsView: Boolean = false
+
+    const val IMAGEN_CREDITS = "https://drive.google.com/uc?export=view&id=1A8yhOkEsfL0mGIQcBfgjqXlDySDC7l0f"
 }
