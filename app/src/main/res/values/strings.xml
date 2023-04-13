@@ -35,4 +35,35 @@
     <string name="habitat">Habitat</string>
     <string name="origen_detail">Origen</string>
     <string name="nombre_cientifico">Nombre cientifico</string>
+
+    <!--- Commentarios -->
+    <string name="enviar_comentario">Enviar Comentario</string>
+    <string name="comentarioprueba">Ingresa tu comentario aqui</string>
+    <!--- Calificación -->
+    <string name="calificanos">Calificación: 5 estrellas</string>
+    <string name="califica">Calificanos</string>
+    <!--- Credits -->
+    <string name="Titulo_agradecimiento">AGRADECIMIENTOS!</string>
+    <string name="Texto_agradecimiento">"Queremos agradecer al profesor Christian Said Berriozabal Islas por su contribucion para el equipo."</string>
+    <string name="InfoProfe">Maestría y doctorado en el programa en Ciencias de Biodiversidad y Conservación de la Universidad Autónoma del Estado de Hidalgo. Sus líneas de investigación son la biodiversidad, el cambio climático global, la ecología térmica, la evolución y los patrones de distribución utilizando como modelo de estudio a los vertebrados en sistemas tropicales. Fue profesor de la Universidad Autónoma del Estado de Hidalgo y la Universidad Autónoma de Quintana Roo. Actualmente, es profesor de la Universidad Politécnica de Quintana Roo. Christian ha estado involucrado en proyectos relacionados con la educación ambiental y la conservación de la vida silvestre, fue coautor del libro Los Anfibios y Reptiles del Estado de Hidalgo, México: Diversidad, Biogeografía y Conservación, y diversos capítulos de libros. Es autor y coautor de 50 artículos científicos, así como de diversos artículos de divulgación. Actualmente, pertenece al sistema Nacional de Investigadores Nivel 1 y participa en colaboración con diversas universidades nacionales e internacionales</string>
+    <string name="Creditos">"CREDITOS"</string>
+    <string name="REPTILES">"REPTILES"</string>
+    <string name="Lista_Imagenes">"Staurotypus triporcatus Foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes1">"Basiliscus foto de Christian B.I.JPG"</string>
+    <string name="Lista_Imagenes2">"Laemanctus serratus foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes3">"Ctenosaura similis foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes4">"Boa Imperator foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes5">"Spilotes pullatus Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes6">"Nauyaca foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes7">"Crotaluz tzabcan Christian B.I.jpg"</string>
+
+    <string name="ANFIBIOS">"ANFIBIOS"</string>
+    <string name="Lista_Imagenes8">"Eleutherodactylus Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes9">"Incilius valliceps foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes10">"Smilisca baudinii Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes11">"Trachycephalus foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes12">"Leptodactylus foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes13">"Hypopachus variolosus Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes14">"Lithobates foto de Christian B.I.jpg"</string>
+    <string name="Lista_Imagenes15">"Rhinella horribilis Christian B.I.jpg"</string>
 </resources>
