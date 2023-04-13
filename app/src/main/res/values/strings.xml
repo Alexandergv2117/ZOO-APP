@@ -36,6 +36,12 @@
     <string name="origen_detail">Origen</string>
     <string name="nombre_cientifico">Nombre cientifico</string>
 
+    <!--- Commentarios -->
+    <string name="enviar_comentario">Enviar Comentario</string>
+    <string name="comentarioprueba">Ingresa tu comentario aqui</string>
+    <!--- Calificación -->
+    <string name="calificanos">Calificación: 5 estrellas</string>
+    <string name="califica">Calificanos</string>
     <!--- Credits -->
     <string name="Titulo_agradecimiento">AGRADECIMIENTOS!</string>
     <string name="Texto_agradecimiento">"Queremos agradecer al profesor Christian Said Berriozabal Islas por su contribucion para el equipo."</string>
