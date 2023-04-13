@@ -5,21 +5,70 @@
     android:id="@+id/FragmenHomeContain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.home.HomeFragment">
+    tools:context=".UI.home.HomeFragment"
+    android:background="@color/verde_oscuro">
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/onboardingViewPager"
+        android:layout_width="414dp"
+        android:layout_height="459dp"
+        android:background="@drawable/view_pager_background"
+        app:layout_constraintBottom_toBottomOf="@id/viewCenterOfNext11"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="-7dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="370dp"
+        android:layout_height="130dp"
+        android:fontFamily="@font/bangers"
+        android:text="Animales           Peninsula de Yucatan "
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FF9800"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ScrollView
+        android:layout_width="363dp"
+        android:layout_height="291dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="none"
+            android:fallbackLineSpacing="true"
+            android:fontFamily="serif"
+            android:lineSpacingExtra="8sp"
+            android:outlineSpotShadowColor="#D53232"
+            android:text=" Los anfibios y reptiles son muy importantes para nosotros debido a que son excelentes bioindicadores de la salud del ecosistema, por ejemplo, los bioindicadores son todos aquellos organismos los cuales, gracias a sus características ecológicas y fisiológicas, cuentan con una elevada sensibilidad a los diferentes cambios ambientales que se dan en la naturaleza. Por ejemplo, algunos bioindicadores son capaces de reaccionar ante la presencia de acumulaciones de contaminantes mucho antes de lo que lo hacen los indicadores artificiales o abióticos. De esta forma, los bioindicadores ambientales constituyen una de las herramientas de trabajo más utilizadas en los programas de biomonitorización, los cuales permiten conocer si existen riesgos de contaminación ambiental en los diferentes ecosistemas del planeta. Sin embargo y a pesar de su importancia la Organización de las Naciones Unidas (ONU) en año 2019 presentó un informe sobre la biodiversidad de anfibios y su estado de conservación, sin embargo, en este informe se advertía que un millón de especies en el mundo estarían en peligro de extinción por diversos factores de origen antrópico como son la contaminación, cambio climático, enfermedades, deforestación, destrucción de hábitats y sobreexplotación del medio natural. Por lo tanto, la conservación de la diversidad de anfibios y reptiles resulta de vital importancia para la integridad de los ecosistemas y la permanencia de los servicios ecosistémicos de los que actualmente las civilizaciones subsistimos.  "
+            android:textAlignment="textStart"
+            android:textColor="#0E0E0E"
+            android:textDirection="inherit"
+            android:textIsSelectable="true" />
+    </ScrollView>
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_home"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="416dp"
+        android:layout_height="265dp"
+        android:background="#454CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="5dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:background="#00F1E7E7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
