@@ -29,23 +29,20 @@ class SpecieTypeViewModel @Inject constructor(
 
     fun onCreate(adapter: SpecieTypeAdapter, view: View, context: Context) {
         val layoutManager = GridLayoutManager(context, 2)
-        val itemDecorator = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        setRecyclerView(layoutManager, itemDecorator, recyclerView, adapter, context)
+        setRecyclerView(layoutManager, recyclerView, adapter, context)
     }
 
     @SuppressLint("NotifyDataSetChanged")
     private fun setRecyclerView(
         layoutManager: LinearLayoutManager,
-        itemDecorator: DividerItemDecoration,
         recyclerView: RecyclerView,
         adapter: SpecieTypeAdapter,
         context: Context
     ) {
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
-        recyclerView.addItemDecoration(itemDecorator)
 
         viewModelScope.launch {
             isLoanding.postValue(true)
@@ -86,13 +83,11 @@ class SpecieTypeViewModel @Inject constructor(
 
     fun onReload (
         layoutManager: LinearLayoutManager,
-        itemDecorator: DividerItemDecoration,
         recyclerView: RecyclerView,
         adapter: SpecieTypeAdapter
     ) {
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
-        recyclerView.addItemDecoration(itemDecorator)
 
         viewModelScope.launch {
             val result = srlSpecieTypeUseCase()

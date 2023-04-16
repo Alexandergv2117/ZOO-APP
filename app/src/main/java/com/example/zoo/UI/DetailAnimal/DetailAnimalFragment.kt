@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
+import com.bumptech.glide.Glide
 import com.example.zoo.databinding.FragmentDetailAnimalBinding
 import com.example.zoo.utils.Const
 import com.squareup.picasso.Picasso
@@ -28,7 +29,8 @@ class DetailAnimalFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Picasso.get()
+        Glide.with(this)
+            .asGif()
             .load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.gif}")
             .into(binding.gifAnimal)
 
