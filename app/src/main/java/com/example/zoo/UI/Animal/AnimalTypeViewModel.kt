@@ -29,16 +29,14 @@ class AnimalTypeViewModel @Inject constructor(
 
     fun onCreate(adapter: AnimalTypeAdapter, view: View, context: Context, tipo: String) {
         val layoutManager = GridLayoutManager(context, 2)
-        val itemDecorator = DividerItemDecoration(context, DividerItemDecoration.VERTICAL)
         val recyclerView: RecyclerView = view.findViewById(R.id.recyclerView)
 
-        setRecyclerView(layoutManager, itemDecorator, recyclerView, adapter, context, tipo)
+        setRecyclerView(layoutManager, recyclerView, adapter, context, tipo)
     }
 
      @SuppressLint("NotifyDataSetChanged")
      private fun setRecyclerView(
          layoutManager: GridLayoutManager,
-         itemDecorator: DividerItemDecoration,
          recyclerView: RecyclerView,
          adapter: AnimalTypeAdapter,
          context: Context,
@@ -46,7 +44,6 @@ class AnimalTypeViewModel @Inject constructor(
      ) {
          recyclerView.layoutManager = layoutManager
          recyclerView.adapter = adapter
-         recyclerView.addItemDecoration(itemDecorator)
 
          viewModelScope.launch {
              isLoanding.postValue(true)
@@ -100,14 +97,12 @@ class AnimalTypeViewModel @Inject constructor(
 
     fun onReload (
         layoutManager: LinearLayoutManager,
-        itemDecorator: DividerItemDecoration,
         recyclerView: RecyclerView,
         adapter: AnimalTypeAdapter,
         tipo: String
     ) {
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = adapter
-        recyclerView.addItemDecoration(itemDecorator)
 
         viewModelScope.launch {
             val result = srlAnimalTypeUseCase(tipo)

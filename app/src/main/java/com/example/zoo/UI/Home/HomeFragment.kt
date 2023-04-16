@@ -53,7 +53,6 @@ class HomeFragment : Fragment() {
 
             specieViewModel.onReload(
                 layoutManager,
-                itemDecorator,
                 binding.recyclerView,
                 SpecieTypeAdapter()
             )
