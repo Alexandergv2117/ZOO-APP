@@ -5,8 +5,9 @@
     android:id="@+id/FragmenHomeContain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.home.HomeFragment"
-    android:background="@color/verde_oscuro">
+    android:background="@drawable/pngtree_vector_illustration_green_botanical_transparent_background_png_image_6591319"
+    tools:context=".UI.home.HomeFragment">
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboardingViewPager"
         android:layout_width="414dp"
