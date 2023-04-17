@@ -22,12 +22,9 @@
     <color name="naranja_atardecer">#FFA07A</color>
     <color name="purpura_montana">#9370DB</color>
     <color name="gris_tormenta">#696969</color>
-    <color name="verde_oscuro">#006400</color>
     <color name="verde_claro">#8FBC8F</color>
-    <color name="verde_lima">#00FF00</color>
-    <color name="verde_oliva_oscuro">#556B2F</color>
+    <color name="verde_oscuro">#556B2F</color>
     <color name="verde_manzana">#98FB98</color>
-    <color name="verde_menta">#00FA9A</color>
     <color name="marron_claro">#CD853F</color>
     <color name="marron_oscuro">#654321</color>
     <color name="gris_claro">#D3D3D3</color>

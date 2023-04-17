@@ -22,7 +22,7 @@
         android:layout_width="370dp"
         android:layout_height="130dp"
         android:fontFamily="@font/bangers"
-        android:text="Animales           Peninsula de Yucatan "
+        android:text="Animales          Peninsula de Yucatan "
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="#FF9800"

@@ -66,4 +66,8 @@
     <string name="Lista_Imagenes13">"Hypopachus variolosus Christian B.I.jpg"</string>
     <string name="Lista_Imagenes14">"Lithobates foto de Christian B.I.jpg"</string>
     <string name="Lista_Imagenes15">"Rhinella horribilis Christian B.I.jpg"</string>
+    <!--- Reproduccion de Video y Audio -->
+    <string name="testmp3">https://storage.googleapis.com/exoplayer-test-media-0/play.pm3</string>
+    <string name="testmp4">https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny-320x180.mp4</string>
+    <string name="audio">Audio</string>
 </resources>
