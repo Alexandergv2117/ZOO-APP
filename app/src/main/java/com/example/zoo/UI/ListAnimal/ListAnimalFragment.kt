@@ -67,7 +67,6 @@ class ListAnimalFragment : Fragment() {
     }
 
     private fun setList(view: View) {
-        Toast.makeText(requireContext(), args.tipo, Toast.LENGTH_SHORT).show()
         animalViewModel.onCreate(
             AnimalTypeAdapter(),
             view,
