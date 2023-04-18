@@ -339,12 +339,10 @@
                     android:scaleType="fitXY"
                     app:animation_enabled="true"
                     app:buffered_color="@color/verde_oliva"
-                    app:layout_constraintBottom_toTopOf="@+id/mapa"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.314"
                     app:show_buffering="when_playing"
                     app:show_shuffle_button="true" />
 
@@ -354,7 +352,6 @@
                     android:layout_height="wrap_content"
                     android:text="descripcion"
 
-                    app:layout_constraintBottom_toTopOf="@+id/mapa"
                     app:layout_constraintTop_toBottomOf="@+id/player_view"
                     tools:layout_editor_absoluteX="0dp" />
 
