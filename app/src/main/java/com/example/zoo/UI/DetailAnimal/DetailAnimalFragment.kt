@@ -132,7 +132,7 @@ class DetailAnimalFragment : Fragment() {
 
         }
         //para reproducir un gif
-        Glide.with(this).asGif().load("https://drive.google.com/uc?id=1xdXkTWDhF0y4lMdfUr9faD3KpiaIdVzf").into(binding.gifAnimal)
+        Glide.with(this).asGif().load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.gif}").into(binding.gifAnimal)
     }
     override fun onDestroy() {
         super.onDestroy()
