@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".UI.home.HomeFragment"
-    android:background="@color/verde_oscuro">
+    android:background="#DDDDDD">
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/onboardingViewPager"
         android:layout_width="414dp"
@@ -59,7 +59,6 @@
         android:id="@+id/swipe_home"
         android:layout_width="416dp"
         android:layout_height="265dp"
-        android:background="#454CAF50"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="5dp">
