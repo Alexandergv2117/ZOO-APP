@@ -19,7 +19,6 @@ class SpecieTypeViewHolder(
     fun bind(item: SpecieTypeModel) {
         binding.specieName.text = item.tipo
         Glide.with(itemView)
-            .load( "https://drive.google.com/file/d/17TEpxkcOcedAo56ZlVnXMcq_0ohzwTZj/view?usp=sharing")
             .into(binding.specieImage)
         itemView.setOnClickListener {
             val action = HomeFragmentDirections.actionNavigationHomeToListAnimalFragment(item.tipo)

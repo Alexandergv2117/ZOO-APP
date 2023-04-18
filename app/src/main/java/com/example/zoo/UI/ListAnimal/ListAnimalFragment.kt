@@ -51,12 +51,9 @@ class ListAnimalFragment : Fragment() {
         binding.swipeHome.setOnRefreshListener {
             binding.swipeHome.setColorSchemeColors(R.color.white, R.color.teal_200)
             val layoutManager = GridLayoutManager(requireContext(), 2)
-            val itemDecorator =
-                DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
 
             animalViewModel.onReload(
                 layoutManager,
-                itemDecorator,
                 binding.recyclerView,
                 AnimalTypeAdapter(),
                 args.tipo

@@ -39,6 +39,7 @@ class DetailAnimalFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        
         //  Reproductor de Video
         val uri = "https://drive.google.com/uc?export=download&id=1-AtTgvpYYE6l0Dm2jTd8BIwfcm08KW0k"
         if (uri.isNotEmpty()){
@@ -51,6 +52,11 @@ class DetailAnimalFragment : Fragment() {
         }else{
             binding.playerView.visibility = View.GONE // Oculta el reproductor de video si la URI está vacía
         }
+        
+        Glide.with(this)
+            .asGif()
+            .load("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.gif}")
+            .into(binding.gifAnimal)
 
         binding.nombreCientifico.text = args.animalType.scientific_name
         binding.nombre.text = args.animalType.nombre
