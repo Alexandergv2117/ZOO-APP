@@ -46,7 +46,7 @@ class DetailAnimalFragment : Fragment() {
             player = ExoPlayer.Builder(requireContext()).build()
             var exoPlayerView = binding.playerView
             exoPlayerView.player = player
-            val mediaItem = MediaItem.fromUri(uri)
+            val mediaItem = MediaItem.fromUri("${Const.BASE_URL_GOOGLE_DRIVE}${args.animalType.video}")
             player.setMediaItem(mediaItem)
             player.prepare()
         }else{
