@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -41,7 +42,7 @@ class ListAnimalFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val bottomNavigationView = activity?.findViewById<BottomNavigationView>(R.id.nav_view)
         bottomNavigationView?.visibility = View.GONE
-        binding.text.text = args.tipo
+        binding.specie.text = args.tipo
         setList(view)
         configSwipe()
     }
@@ -51,12 +52,9 @@ class ListAnimalFragment : Fragment() {
         binding.swipeHome.setOnRefreshListener {
             binding.swipeHome.setColorSchemeColors(R.color.white, R.color.teal_200)
             val layoutManager = GridLayoutManager(requireContext(), 2)
-            val itemDecorator =
-                DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
 
             animalViewModel.onReload(
                 layoutManager,
-                itemDecorator,
                 binding.recyclerView,
                 AnimalTypeAdapter(),
                 args.tipo
@@ -70,7 +68,6 @@ class ListAnimalFragment : Fragment() {
     }
 
     private fun setList(view: View) {
-        Toast.makeText(requireContext(), args.tipo, Toast.LENGTH_SHORT).show()
         animalViewModel.onCreate(
             AnimalTypeAdapter(),
             view,
