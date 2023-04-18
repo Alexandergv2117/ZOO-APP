@@ -29,6 +29,8 @@ class ListAnimalFragment : Fragment() {
     private val binding get() = _binding!!
     private val animalViewModel: AnimalTypeViewModel by viewModels()
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

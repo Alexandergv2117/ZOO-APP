@@ -20,7 +20,7 @@ import com.google.android.exoplayer2.MediaItem
 import com.squareup.picasso.Picasso
 
 class DetailAnimalFragment : Fragment() {
-    private lateinit var mediaPlayer: MediaPlayer
+    private var mediaPlayer: MediaPlayer? = null
     private lateinit var player: ExoPlayer
     private val args by navArgs<DetailAnimalFragmentArgs>()
     private var _binding: FragmentDetailAnimalBinding? = null
@@ -117,15 +117,16 @@ class DetailAnimalFragment : Fragment() {
                 .setUsage(AudioAttributes.USAGE_MEDIA)
                 .setLegacyStreamType(AudioManager.STREAM_MUSIC)
                 .build()
-            mediaPlayer.setAudioAttributes(audioAttributes)
-            mediaPlayer.setDataSource(url)
-            mediaPlayer.prepareAsync()
-            if (mediaPlayer.isPlaying()){
-                mediaPlayer.pause()
-            }else{
-                mediaPlayer.setOnPreparedListener {
-                    mediaPlayer.start()
-
+            mediaPlayer?.let {
+                it.setAudioAttributes(audioAttributes)
+                it.setDataSource(url)
+                it.prepareAsync()
+                if (it.isPlaying){
+                    it.pause()
+                }else{
+                    it.setOnPreparedListener {
+                        it.start()
+                    }
                 }
             }
 
@@ -137,7 +138,7 @@ class DetailAnimalFragment : Fragment() {
         super.onDestroy()
         _binding = null
         player.release()
-        mediaPlayer.release()
+        mediaPlayer?.release()
 
     }
 }

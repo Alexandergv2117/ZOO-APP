@@ -19,6 +19,7 @@ class SpecieTypeViewHolder(
     fun bind(item: SpecieTypeModel) {
         binding.specieName.text = item.tipo
         Glide.with(itemView)
+            .load("${Const.BASE_URL_GOOGLE_DRIVE}${item.link_foto}")
             .into(binding.specieImage)
         itemView.setOnClickListener {
             val action = HomeFragmentDirections.actionNavigationHomeToListAnimalFragment(item.tipo)
