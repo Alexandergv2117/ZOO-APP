@@ -30,37 +30,37 @@ class Onboarding : AppCompatActivity() {
     }
     /*Informacion dentro del Item*/
     private fun setOnboardingItems() {
+        val string1 = getString(R.string.desc1)
+        val string2 = getString(R.string.desc2)
+        val string3 = getString(R.string.desc3)
+        val string4 = getString(R.string.desc4)
+        val string5 = getString(R.string.desc5)
         onboardingItemsAdapter = OnboardingItemsAdapter(
             listOf(
                 OnboardingItem(
                     onboardingImage = R.drawable.task,
-                    title = "Descripción",
-                    description = "No importa si eres un entusiasta de la naturaleza  \n" +
-                            "o simplemente un amante de los animales, nuestra aplicación \n " +
-                            "móvil es fácil de usar y te mantendrá entretenido durante horas.\n " +
-                            "Desde ranas vibrantes y camaleones coloridos hasta \n " +
-                            "serpientes peligrosas y tortugas enigmáticas, ¡nuestro \n " +
-                            "catálogo de Anfibios y Reptiles lo tiene todo!"
+                    title = "¡Bienvenido!",
+                    description = string1
                 ),
                 OnboardingItem(
-                    onboardingImage = R.drawable.menuframe,
-                    title = "Menu Inicial",
-                    description = "Selecciona la especie"
+                    onboardingImage = R.drawable.menu,
+                    title = "¡Cooomencemos!",
+                    description = string2
                 ),
                 OnboardingItem(
-                    onboardingImage = R.drawable.submenu,
-                    title = "Menu Secundario",
-                    description = "Selecciona el animal de tu interes"
+                    onboardingImage = R.drawable.menudos,
+                    title = "Sub-Menu",
+                    description = string3
                 ),
                 OnboardingItem(
-                    onboardingImage = R.drawable.detalles,
-                    title = "Descripcion",
-                    description = "Disfruta aprendiendo y divirtiendote"
+                    onboardingImage = R.drawable.detalle,
+                    title = "Detalle del Animal",
+                    description = string4
                 ),
                 OnboardingItem(
-                    onboardingImage = R.drawable.comentarios,
-                    title = "Comentarios",
-                    description = "Tambien puedes comentar y calificar para obtener una mejor experiencia"
+                    onboardingImage = R.drawable.comentario,
+                    title = "Calificanos",
+                    description = string5
                 )
             )
         )

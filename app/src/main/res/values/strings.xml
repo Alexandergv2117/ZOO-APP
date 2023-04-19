@@ -17,7 +17,7 @@
     <string name="prefs_file">com.example.zoo.PREFERENCE_FILE_KEY</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="guia_rapida">Guia Rapida</string>
+    <string name="guia_rapida">Registrate</string>
     <string name="skip">Skip</string>
 
     <!--- Detail -->
@@ -70,4 +70,14 @@
     <string name="testmp3">https://storage.googleapis.com/exoplayer-test-media-0/play.pm3</string>
     <string name="testmp4">https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny-320x180.mp4</string>
     <string name="audio">Audio</string>
+
+    <!--- Strings del onboarding -->
+    <string name="desc1">"¡Bienvenido/a a nuestro catálogo móvil de anfibios y reptiles! Estamos muy emocionados de que hayas decidido descargar nuestra aplicación y explorar el fascinante mundo de estos animales.\n"
+                            "Para empezar, te guiaremos a través de una breve introducción a nuestra app y sus características principales."</string>
+
+    <string name="desc2">Al abrir la aplicación, te encontrarás en el Menú Principal, donde podrás ver todas las especies disponibles en nuestro catálogo. Cada especie viene con una foto y el nombre de la misma, lo que te ayudará a navegar y encontrar fácilmente la especie que estás buscando.</string>
+    <string name="desc3">En el Menú Secundario, podrás seleccionar la categoría de animal que te interese explorar, ya sea anfibios o reptiles. Este menú te permitirá filtrar las especies por tipo, lo que facilitará aún más la búsqueda de un animal específico.</string>
+    <string name="desc4">Una vez que hayas encontrado una especie que te interese, puedes hacer clic en ella para ver el Detalle del Animal. Aquí encontrarás una gran cantidad de información, incluyendo un video y/o gif, texto detallado, iconos útiles para identificar las características del animal, y audio para escuchar los sonidos que hace.</string>
+    <string name="desc5">En la Vista de Calificación y Comentarios, tendrás la oportunidad de compartir tus opiniones y comentarios sobre la aplicación, para ayudarnos a mejorar nuestra experiencia de usuario.</string>
+    <string name="desc6">¡Gracias por unirte a nuestra comunidad de amantes de los anfibios y reptiles! Esperamos que disfrutes de nuestra aplicación tanto como nosotros lo hacemos. Si tienes alguna pregunta o problema, no dudes en contactarnos a través de nuestra sección de Soporte.</string>
 </resources>
