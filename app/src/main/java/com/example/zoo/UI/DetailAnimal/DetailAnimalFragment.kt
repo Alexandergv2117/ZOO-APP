@@ -5,9 +5,11 @@ import android.media.AudioManager
 import android.media.MediaPlayer
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.TooltipCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
@@ -37,12 +39,24 @@ class DetailAnimalFragment : Fragment() {
         return binding.root
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                requireActivity().onBackPressed()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
+    }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        (activity as AppCompatActivity?)!!.supportActionBar!!.title = args.animalType.scientific_name
+        setHasOptionsMenu(true)
+        (activity as AppCompatActivity?)!!.supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         
         //  Reproductor de Video
-        val uri = "https://drive.google.com/uc?export=download&id=1-AtTgvpYYE6l0Dm2jTd8BIwfcm08KW0k"
-        if (uri.isNotEmpty()){
+        if (args.animalType.video.isNotEmpty()){
             player = ExoPlayer.Builder(requireContext()).build()
             var exoPlayerView = binding.playerView
             exoPlayerView.player = player
