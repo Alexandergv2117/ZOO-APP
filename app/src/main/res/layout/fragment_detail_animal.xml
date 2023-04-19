@@ -81,27 +81,32 @@
                     android:id="@+id/nombre_cientifico"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="@font/mark"
+                    android:textSize="27dp"
                     android:foregroundTint="#000000"
+                    android:textColor="@color/black"
                     android:text="@string/nombre_cientifico"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal6"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.07"
+                    app:layout_constraintHorizontal_bias="0.071"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.045" />
+                    app:layout_constraintVertical_bias="0.222"
+                    />
 
                 <TextView
                     android:id="@+id/nombre"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Nombre"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/arima"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal6"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.058"
+                    app:layout_constraintHorizontal_bias="0.057"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.127" />
+                    app:layout_constraintVertical_bias="0.638" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline_horizontal6"
@@ -118,6 +123,8 @@
                     android:layout_height="@dimen/layout_width_icon"
                     android:background="@drawable/icon_back"
                     android:elevation="8dp"
+                    android:fontFamily="@font/mark"
+                    android:textSize="27dp"
                     android:outlineAmbientShadowColor="#070404"
                     android:scaleType="fitXY"
                     android:translationZ="2dp"
@@ -133,6 +140,9 @@
                     android:layout_width="@dimen/layout_width_image"
                     android:layout_height="@dimen/layout_height_image"
                     android:text="@string/origen_detail"
+                    android:fontFamily="@font/arima"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal5"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.831"
@@ -168,6 +178,9 @@
                     android:layout_width="@dimen/layout_width_image"
                     android:layout_height="@dimen/layout_height_image"
                     android:text="@string/habitat"
+                    android:fontFamily="@font/arima"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal4"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.82"
@@ -203,6 +216,9 @@
                     android:layout_width="@dimen/layout_width_image"
                     android:layout_height="@dimen/layout_height_image"
                     android:text="@string/riesgo_detai"
+                    android:fontFamily="@font/arima"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal3"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.82"
@@ -238,6 +254,9 @@
                     android:layout_width="@dimen/layout_width_image"
                     android:layout_height="@dimen/layout_height_image"
                     android:text="@string/tama_o"
+                    android:fontFamily="@font/arima"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.786"
@@ -273,6 +292,9 @@
                     android:layout_width="@dimen/layout_width_image"
                     android:layout_height="@dimen/layout_height_image"
                     android:text="@string/reproducci_n"
+                    android:fontFamily="@font/arima"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.831"
@@ -306,6 +328,9 @@
                     android:layout_width="@dimen/layout_width_image"
                     android:layout_height="@dimen/layout_height_image"
                     android:text="@string/alimentacion"
+                    android:fontFamily="@font/arima"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
                     app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.831"
@@ -318,11 +343,11 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     app:layout_constraintGuide_percent="0.88" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="500dp">
+                android:layout_height="wrap_content">
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline_horizontal0"
@@ -344,28 +369,51 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:show_buffering="when_playing"
+                    app:layout_constraintBottom_toTopOf="@+id/descripcion"
                     app:show_shuffle_button="true" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="24dp"
+                    app:layout_constraintBottom_toTopOf="@+id/descripcion"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/player_view" />
 
                 <TextView
                     android:id="@+id/descripcion"
-                    android:layout_marginBottom="100dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="descripcion"
+                    android:fontFamily="@font/arimaregular"
+                    android:textSize="18dp"
+                    android:background="@drawable/bordertext"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toTopOf="@id/mapa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.51"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/player_view" />
 
-                    app:layout_constraintTop_toBottomOf="@+id/player_view"
-                    tools:layout_editor_absoluteX="0dp" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:layout_constraintBottom_toTopOf="@+id/mapa"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/descripcion" />
 
                 <ImageView
                     android:id="@+id/mapa"
-                    android:layout_width="327dp"
-                    android:layout_height="184dp"
+                    android:layout_width="376dp"
+                    android:layout_height="227dp"
                     android:layout_marginBottom="44dp"
-                    android:layout_marginTop="100dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/descripcion"
+                    app:layout_constraintTop_toBottomOf="@id/descripcion"
                     app:shapeAppearanceOverlay="@style/SpecifiCornerRounded"
                     tools:src="@tools:sample/backgrounds/scenic" />
             </androidx.constraintlayout.widget.ConstraintLayout>
